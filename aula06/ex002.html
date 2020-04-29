@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Programa</title>
+    <style>
+        body { background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ4MavoMR1xae1ydEeblB2bKdlTj9pWUWjS2V0TT0T2Rdd9Jo1L&usqp=CAU);
+               font: normal 20pt Arial; 
+        }
+        h1 {
+            color: rgb(248, 244, 7); /*Comentario em CSS */
+        }
+        p {
+            color: whitesmoke;
+        }
+    </style>
+   <!-- <section class="hero">
+        <div class="hero__container">
+            <h1 class="hero__title"> A sua nova casa está aqui no Viva Real </h1>
+        
+            <a class="hero__publisher-access js-hero-publisher-link" href="https://canalpro.grupozap.com/welcome/" target="_blank">
+                Anunciante: acesse seu portal aqui
+            </a>
+        
+            <div class="main-search js-main-search"><form class="main-search__form js-base-search" data-active="">
+    <div class="main-search__select-fields js-select-fields"><div><div class="select-fields__container">
+    <div class="main-search__field--business">
+      <label class="main-search__label"> O que você quer? </label>
+      <select class="js-select-business">
+        <option class="item" value="sale">
+          Comprar
+        </option>
+        <option class="item" value="rent" selected="">
+          Alugar
+        </option>
+        <option class="item" value="development">
+          Imóveis Novos
+        </option>
+      </select>
+    </div>
+    <div class="main-search__field--property-type">
+      <label class="main-search__label"> Tipo do imóvel </label>
+      <select class="js-select-type">
+        <option value=""> Mostrar todos </option>
+            <optgroup label="Residencial">
+                <option value="APARTMENT|UnitSubType_NONE,DUPLEX,LOFT,STUDIO,TRIPLEX|RESIDENTIAL|APARTMENT" selected="">
+                  Apartamento
+                </option>
+                <option value="HOME|UnitSubType_NONE,SINGLE_STOREY_HOUSE,VILLAGE_HOUSE,KITNET|RESIDENTIAL|HOME">
+                  Casa
+                </option>
+                <option value="HOME|CONDOMINIUM|RESIDENTIAL|CONDOMINIUM">
+                  Casa de Condomínio
+                </option>
+                <option value="COUNTRY_HOUSE|UnitSubType_NONE|RESIDENTIAL|COUNTRY_HOUSE">
+                  Chácara
+                </option>
+                <option value="APARTMENT|PENTHOUSE|RESIDENTIAL|PENTHOUSE">
+                  Cobertura
+                </option>
+                <option value="APARTMENT|FLAT|RESIDENTIAL|FLAT">
+                  Flat
+                </option>
+                <option value="APARTMENT|KITNET|RESIDENTIAL|KITNET">
+                  Kitnet/Conjugado
+                </option>
+                <option value="ALLOTMENT_LAND|UnitSubType_NONE,CONDOMINIUM,VILLAGE_HOUSE|RESIDENTIAL|RESIDENTIAL_ALLOTMENT_LAND">
+                  Lote/Terreno
+                </option>
+                <option value="HOME|TWO_STORY_HOUSE|RESIDENTIAL|TWO_STORY_HOUSE">
+                  Sobrado
+                </option>
+                <option value="RESIDENTIAL_BUILDING|UnitSubType_NONE|RESIDENTIAL|RESIDENTIAL_BUILDING">
+                  Edifício Residencial
+                </option>
+                <option value="FARM|UnitSubType_NONE,CONDOMINIUM|RESIDENTIAL|FARM">
+                  Fazenda/Sítios/Chácaras
+                </option>
+            </optgroup>
+            <optgroup label="Comercial">
+                <option value="OFFICE|CLINIC|COMMERCIAL|CLINIC">
+                  Consultório
+                </option>
+                <option value="SHED_DEPOSIT_WAREHOUSE|UnitSubType_NONE|COMMERCIAL|SHED_DEPOSIT_WAREHOUSE">
+                  Galpão/Depósito/Armazém
+                </option>
+                <option value="HOME|UnitSubType_NONE|COMMERCIAL|COMMERCIAL_PROPERTY">
+                  Imóvel Comercial
+                </option>
+                <option value="ALLOTMENT_LAND|UnitSubType_NONE|COMMERCIAL|COMMERCIAL_ALLOTMENT_LAND">
+                  Lote/Terreno
+                </option>
+                <option value="BUSINESS|UnitSubType_NONE,RETAIL_CENTER,GALLERY,SHOPPING|COMMERCIAL|BUSINESS">
+                  Ponto Comercial/Loja/Box
+                </option>
+                <option value="OFFICE|UnitSubType_NONE,OFFICE,FLOOR|COMMERCIAL|OFFICE">
+                  Sala/Conjunto
+                </option>
+                <option value="BUILDING|UnitSubType_NONE|COMMERCIAL|COMMERCIAL_BUILDING">
+                  Prédio/Edifício Inteiro
+                </option>
+            </optgroup>
+      </select>
+    </div>
+  </div>
+  </div></div>
+  
+    <div class="main-search__field--location js-location-input"><div><div class="filters__location">
+    <input type="text" placeholder="Digite uma rua, bairro ou cidade" class="js-input" id="filter-location-search-input" autocomplete="off">
+  
+    <div class="js-suggestions"><div><div class="location-suggestions__container js-autocomplete" data-empty="">
+  
+  </div>
+  </div></div>
+  
+  </div>
+  </div></div>
+  
+    <div class="main-search__field--submit">
+      <input class="main-search__submit js-prevent" type="submit" value="Buscar">
+    </div>
+  </form>
+  
+  <form action="https://www.vivareal.com.br/busca-por-codigo/" class="main-search__form--find-by-id js-code-search">
+    <label class="find-by-id__label"> Informe o código do imóvel que procura </label>
+    <div class="find-by-id__field">
+      <input type="text" placeholder="Código do imóvel que procura" name="id" class="js-code-input">
+    </div>
+  
+    <div class="find-by-id__field--submit">
+      <input class="find-by-id__submit js-submit-code" type="submit" value="Buscar">
+    </div>
+  </form>
+  
+  <button type="button" class="main-search__toggle-search js-toggle-find-by-id">
+    <span class="js-base-search" data-active=""> Buscar por código do imóvel </span>
+    <span class="js-code-search"> ← Voltar para a busca por localização </span>
+  </button>
+  </div>
+        </div>
+    </section>-->
+</head>
+<body>
+    <h1>Olá Mundo</h1> <!-- Comentario em HTML -->
+    <p>xau maldição</p>
+    <script>
+        var nome = window.prompt('Qual o seu nome?')//interação
+        window.alert('Olá, ' + nome) //Concatenação
+
+        
+    </script>
+</body>
+</html>
+
